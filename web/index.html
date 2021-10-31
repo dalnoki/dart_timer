@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="scaffolded-by" content="https://github.com/dart-lang/sdk">
+  <title>timetracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="main.dart.js"></script>
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="output"></div>
+  <div class="input-area">
+    <label class="mdc-text-field mdc-text-field--outlined">
+      <span class="mdc-notched-outline">
+        <span class="mdc-notched-outline__leading"></span>
+        <span class="mdc-notched-outline__notch">
+        </span>
+        <span class="mdc-notched-outline__trailing"></span>
+      </span>
+      <input type="text" class="mdc-text-field__input" placeholder="What did you learn today?" id="item-input"
+        aria-labelledby="my-label-id">
+    </label>
+  </div>
+  <div id="main-item"></div>
+  <div id="stopwatch-container">
+    <div id="stopwatch_hours"></div>
+    <div id="stopwatch_minutes"></div>
+    <div id="stopwatch_seconds"></div>
+  </div>
+  <div class="buttons">
+    <button class="mdc-button mdc-button--raised" disabled id="start">
+      <span class="mdc-button__ripple"></span>
+      <span class="mdc-button__touch"></span>
+      <span class="mdc-button__label">Start the timer</span>
+    </button>
+    <button class="mdc-button mdc-button--touch" disabled id="stop">
+      <span class="mdc-button__ripple"></span>
+      <span class="mdc-button__touch"></span>
+      <span class="mdc-button__label">Stop the timer</span>
+    </button>
+  </div>
+  <hr>
+  <h2>History</h2>
+  <ul id="history"></ul>
+</body>
+
+</html>
